@@ -1,0 +1,212 @@
+body {
+	overflow-x: hidden;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.caption {
+	position: absolute;
+	top: 30%;
+	left: 57%;
+	width: 40%;
+	color: white;
+	text-align: right;
+}
+
+.general {
+	width: 100%;
+}
+
+.texto {
+	text-align: center;
+}
+
+.texto1 {
+	margin-top: 0.5%;
+}
+
+.botones {
+	padding: auto;
+	margin-bottom: 3%;
+}
+
+.informacion {
+	width: 100%;
+	margin-top: 2%;
+	padding: 0.5%;
+	color: white;
+}
+
+.bajada {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin-bottom: 2%;
+}
+
+.formulario {
+	width: 100%;
+}
+
+.navegacion {
+	width: 100%;
+	display: block;
+}
+
+.precios {
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+
+.descuento {
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+.bajadas {
+	font-size: medium;
+	text-align: center;
+}
+
+.titulo {
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.botones {
+	align-items: center;
+}
+
+.boton {
+	width: 48%;
+	height: 2.5rem;
+	color: #fff;
+	padding: 0.5em;
+	margin-left: 1%;
+	margin-bottom: 0.5%;
+	border-radius: 0.4rem;
+	border: 1px solid #97c93e;
+	background-color: #97c93e;
+	float: auto;
+	text-align: center;
+	text-decoration: none;
+}
+
+.boton:hover {
+	color: #fff;
+}
+
+.grbotones {
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+
+.input {
+	width: 99.5%;
+	margin-top: 0.5%;
+	height: 2.5rem;
+	color: rgb(76, 76, 76);
+	padding: 0.5em;
+	border-radius: 0.4rem;
+	border: 1px solid #ced4da;
+	background-color: #fff;
+}
+
+.input:focus {
+	border: 1px solid #5b9dff;
+	outline: 5px solid #c2dbfe;
+}
+
+.grupo {
+	display: inline-block;
+	width: 100%;
+}
+
+.cantidad {
+	width: 49.5%;
+	height: 2.5rem;
+	color: rgb(76, 76, 76);
+	padding: 0.5em;
+	border-radius: 0.4rem;
+	border: 1px solid #ced4da;
+	background-color: #fff;
+}
+
+.cantidad:focus {
+	border: 1px solid #5b9dff;
+	outline: 5px solid #c2dbfe;
+}
+
+.categoria {
+	width: 49.5%;
+	height: 2.5rem;
+	color: rgb(76, 76, 76);
+	padding: 0.5em;
+	border-radius: 0.4rem;
+	border: 1px solid #ced4da;
+	background-color: #fff;
+	display: inline-block;
+}
+
+.categoria:focus {
+	border: 1px solid #5b9dff;
+	outline: 5px solid #c2dbfe;
+}
+
+.label {
+	display: block;
+	width: 49.5%;
+	display: inline-block;
+	margin-bottom: 0.5%;
+}
+
+.total {
+	background-color: rgb(215, 238, 252);
+	height: 3.5rem;
+	color: rgb(6, 47, 118);
+	padding: 1rem;
+	border-radius: 0.4rem;
+	margin-top: 0.5%;
+	margin-bottom: 3%;
+	display: block;
+	width: 99.5%;
+}
+
+.form-validacion.error input {
+	border-color: rgb(228, 57, 57);
+}
+
+.categoria.error input {
+	border-color: rgb(228, 57, 57);
+}
+
+.form-validacion.success input {
+	border-color: #97c93e;
+}
+
+.categoria.success input {
+	border-color: #97c93e;
+}
+
+.form-validacion small {
+	color: rgb(228, 57, 57);
+	position: relative;
+	visibility: hidden;
+}
+
+.form-validacion.error small {
+	visibility: visible;
+}
+
+.correcto {
+	color: #97c93e;
+	position: relative;
+	visibility: hidden;
+}
+
+.correcto.valido {
+	visibility: visible;
+}
