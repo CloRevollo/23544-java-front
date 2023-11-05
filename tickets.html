@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap & CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Codo a Codo</title>
+</head>
+
+<body>
+
+    <div class="general">
+        <!-- Barra de Navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid ms-5">
+                <a class="navbar-brand" href="./index.html"><img src="./img/codoacodo.png" alt="Logo" width="120"
+                        height="70" class="d-inline-block align-text-center">Conf Bs As</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="./tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="entradas">
+        <div class="container">
+            <div class="precios">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100" style="border-color: blue; border-width: 2px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center;">Estudiante</h5>
+                                <p class="card-text" style="text-align: center;">Tienen un descuento</p>
+                                <h6 class="descuento">80%</h6>
+                                <p class="bajadas">*presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-color: green; border-width: 2px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center;">Trainee</h5>
+                                <p class="card-text" style="text-align: center;">Tienen un descuento</p>
+                                <h6 class="descuento">50%</h6>
+                                <p class="bajadas">*presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-color: orange; border-width: 2px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center;">Junior</h5>
+                                <p class="card-text" style="text-align: center;">Tienen un descuento</p>
+                                <h6 class="descuento">15%</h6>
+                                <p class="bajadas">*presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="titulo">
+                <p>VENTA</p>
+                <h1>VALOR DE TICKET $200</h1>
+            </div>
+        </div>
+
+        <!--FORMULARIO de COMPRA de TICKETS-->
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3 pe-1 ps-1">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-6 mb-3 ml-2 pe-1 ps-1">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="mb-3 pe-1 ps-1">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3 pe-1 ps-1">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" required>
+                        </div>
+                        <div class="col-md-6 mb-3 pe-1 ps-1">
+                            <label for="categoria" class="form-label">Categoría</label>
+                            <select class="form-select" id="categoria" name="categoria" required>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <p class="total_resumen">Total a pagar: <span id="total_pagar">$0</span></p>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn ticket-btn" id="borrar">Borrar</button>
+                        <button type="submit" class="btn ticket-btn" id="enviar">Resumen</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <div class="navegacion">
+        <ul class="nav justify-content-center navbar-dark bg-dark p-4">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Preguntas frecuentes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contactános</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light">Conferencias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light">Términos y condiciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light">Privacidad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light">Estudiantes</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Javascript Bundle from Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--Script para la compra de Tickets-->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

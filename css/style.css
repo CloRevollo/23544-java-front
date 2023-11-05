@@ -169,8 +169,7 @@ body {
 	color: rgb(6, 47, 118);
 	padding: 1rem;
 	border-radius: 0.4rem;
-	margin-top: 0.5%;
-	margin-bottom: 3%;
+	margin: 10px;
 	display: block;
 	width: 99.5%;
 }
@@ -201,12 +200,17 @@ body {
 	visibility: visible;
 }
 
-.correcto {
-	color: #97c93e;
-	position: relative;
-	visibility: hidden;
+
+.ticket-btn {
+    color: white !important;
+    font-weight: 500 !important;
+    background-color: #97c93e !important;
+    border-style: none !important;
+    padding: 8px !important;
+    border-radius: 8px !important;
+	margin: 10px !important;
 }
 
-.correcto.valido {
-	visibility: visible;
+.ticket-btn:hover {
+    background-color: #2f3e14 !important;
 }
